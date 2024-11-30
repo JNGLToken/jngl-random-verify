@@ -1,5 +1,5 @@
 # Base image for Rust
-FROM rust:1.71
+FROM rust:1.83.0
 
 # Working directory
 WORKDIR /app
