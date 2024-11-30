@@ -44,11 +44,7 @@ fn process_instruction(
     let random_number = (shifted_value % max_tickets) as u64;
 
     // Step 5: Ensure the result is positive (in case of negative wrapping)
-    let final_number = if random_number < 0 {
-        random_number + max_tickets
-    } else {
-        random_number
-    };
+    let final_number = random_number;
 
     msg!("Generated random number: {}", final_number);
 
